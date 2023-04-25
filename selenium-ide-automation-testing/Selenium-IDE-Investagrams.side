@@ -1,0 +1,1032 @@
+{
+  "id": "8ff910e1-469d-4e08-a3f9-c35ac5382537",
+  "version": "2.0",
+  "name": "Investagrams",
+  "url": "https://www.investagrams.com",
+  "tests": [{
+    "id": "a79fb7af-1c7e-4dce-b605-57ebc90f95ce",
+    "name": "RF: Verify Registering an Account by providing the Mandatory fields",
+    "commands": []
+  }, {
+    "id": "b8e8e648-3d1e-4860-871c-7e1e6cbf4bad",
+    "name": "RF: Verify 'Welcome to Investagrams' email is sent to the registered email address as a confirmation for registering the account",
+    "commands": []
+  }, {
+    "id": "b8bb110f-4f3e-4264-9c44-b60d87cd42ed",
+    "name": "RF: Verify proper notification messages are displayed for the mandatory fields, when you don't provide any fields in the 'Register Account' page and submit",
+    "commands": []
+  }, {
+    "id": "5d98e711-5520-4310-823a-c2a55f4a105c",
+    "name": "RF: Verify different ways of navigating to 'Register Account' page",
+    "commands": []
+  }, {
+    "id": "cfe102d5-ec1a-4576-8b1f-77304d6b7f9f",
+    "name": "RF: Verify Registering an Account by providing the existing account details (i.e. existing email address)",
+    "commands": []
+  }, {
+    "id": "1fd90cbb-582d-42a0-a336-2968957f2607",
+    "name": "RF: Verify Registering an Account by providing an invalid email address into the Email Address field",
+    "commands": []
+  }, {
+    "id": "a6377297-b3e9-4e7e-a3b6-b8a82c6d44bc",
+    "name": "RF: Verify Registering an Account by using the Keyboard keys",
+    "commands": []
+  }, {
+    "id": "d81f1cfc-f465-4021-a296-d9ea643ab9bb",
+    "name": "RF: Verify all the fields in the Register Account page have the proper placeholders",
+    "commands": []
+  }, {
+    "id": "835029f1-c964-42aa-9655-e6d0b166d150",
+    "name": "RF: Verify all the mandatory fields in the Register Account page are marked with red color * symbol",
+    "commands": [{
+      "id": "6e6cd473-0ba4-4eef-85ce-73b5584e8d9c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "54107217-8b2e-4eec-bd9b-7a71b575aefe",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1055",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f35d34d1-84d1-4716-bf06-ebe4635f6288",
+      "comment": "",
+      "command": "click",
+      "target": "css=#unregUserDropdown > span > .fas",
+      "targets": [
+        ["css=#unregUserDropdown > span > .fas", "css:finder"],
+        ["xpath=//div[@id='unregUserDropdown']/span/i", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "12d149fc-4d83-49a0-bde6-9d06fe9ea668",
+      "comment": "",
+      "command": "click",
+      "target": "css=#unregUserDropdown .dropdown-item:nth-child(1) .mt-0",
+      "targets": [
+        ["css=#unregUserDropdown .dropdown-item:nth-child(1) .mt-0", "css:finder"],
+        ["xpath=//div[@id='unregUserDropdown']/div/a/div/div[2]/h5", "xpath:idRelative"],
+        ["xpath=//form/div[3]/div/div/a/div/div[2]/h5", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab57d4e8-f0a0-4524-8467-b8071befc710",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pt-12:nth-child(7) > .text-cyan",
+      "targets": [
+        ["css=.pt-12:nth-child(7) > .text-cyan", "css:finder"],
+        ["xpath=//div[4]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Sign up.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "086b3af6-931c-485c-af95-d6d5e3d676d8",
+      "comment": "",
+      "command": "click",
+      "target": "id=opSignUpFirstName",
+      "targets": [
+        ["id=opSignUpFirstName", "id"],
+        ["name=RegisterRequestFirstName", "name"],
+        ["css=#opSignUpFirstName", "css:finder"],
+        ["xpath=//input[@id='opSignUpFirstName']", "xpath:attributes"],
+        ["xpath=//div[3]/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "013f9ec6-f880-4316-ad26-0612a6276b92",
+      "comment": "",
+      "command": "click",
+      "target": "css=.op-login-card",
+      "targets": [
+        ["css=.op-login-card", "css:finder"],
+        ["xpath=//body/div[6]/div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a484634b-e004-4b13-b3d1-ba4ec0899b87",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-6:nth-child(1) > .invg-matte-black",
+      "targets": [
+        ["css=.col-6:nth-child(1) > .invg-matte-black", "css:finder"],
+        ["xpath=//div/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'First Name')]", "xpath:innerText"]
+      ],
+      "value": "* First Name"
+    }, {
+      "id": "74dc26a7-68d3-4404-824a-6709cc1691b5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-row > .form-group:nth-child(2)",
+      "targets": [
+        ["css=.form-row > .form-group:nth-child(2)", "css:finder"],
+        ["xpath=//div[3]/div/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a9180191-8994-4bee-9f72-3a18c722d827",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-6:nth-child(2) > .invg-matte-black",
+      "targets": [
+        ["css=.col-6:nth-child(2) > .invg-matte-black", "css:finder"],
+        ["xpath=//div/div[2]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Last Name')]", "xpath:innerText"]
+      ],
+      "value": "* Last Name"
+    }, {
+      "id": "ed3b6918-2f9b-4d1a-8957-7f399aa936f7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.op-login-card",
+      "targets": [
+        ["css=.op-login-card", "css:finder"],
+        ["xpath=//body/div[6]/div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f29c1367-9e10-420d-b0ad-031487502705",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.my-4 > .mb-20 > .invg-matte-black",
+      "targets": [
+        ["css=.my-4 > .mb-20 > .invg-matte-black", "css:finder"],
+        ["xpath=//div[3]/div/div/div[2]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Email Address')]", "xpath:innerText"]
+      ],
+      "value": "* Email Address"
+    }, {
+      "id": "a2455ff0-c89a-4784-ac52-1aa8a3cbd27f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.op-login-card",
+      "targets": [
+        ["css=.op-login-card", "css:finder"],
+        ["xpath=//body/div[6]/div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b0122c94-7e07-4aa1-9e3d-9bac37505497",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.mb-5 > .mb-1",
+      "targets": [
+        ["css=.mb-5 > .mb-1", "css:finder"],
+        ["xpath=//div[3]/label", "xpath:position"]
+      ],
+      "value": "* Password"
+    }]
+  }, {
+    "id": "0abe0a8e-bac5-42b8-a079-811485ca322e",
+    "name": "RF: Verify the details that are provided while Registering an Account are stored in the Database ",
+    "commands": []
+  }, {
+    "id": "02aff823-f35c-495b-9ac0-6f2a9b5b03fc",
+    "name": "RF: Verify whether the Mandatory fields in the Register Account page are accepting only spaces",
+    "commands": []
+  }, {
+    "id": "1bd06dc3-34ed-47d9-9b2b-c2579d9669f6",
+    "name": "RF: Verify whether the Password fields in the Register Account page are following Password Complexity Standards",
+    "commands": [{
+      "id": "8c748631-5a12-41e6-bc6a-ff79525f726f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1d74ddaa-4a58-4d01-a15d-c3d3e22c17b8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1055",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "79f9b65f-b391-4454-9246-50db540227f3",
+      "comment": "",
+      "command": "click",
+      "target": "id=unregUserDropdown",
+      "targets": [
+        ["id=unregUserDropdown", "id"],
+        ["css=#unregUserDropdown", "css:finder"],
+        ["xpath=//div[@id='unregUserDropdown']", "xpath:attributes"],
+        ["xpath=//div[@id='investaNavbar']/form/div[3]/div", "xpath:idRelative"],
+        ["xpath=//form/div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "727836fe-0b99-4d03-b479-5cff90906e8e",
+      "comment": "",
+      "command": "click",
+      "target": "css=#unregUserDropdown .dropdown-item:nth-child(1) .mb-0",
+      "targets": [
+        ["css=#unregUserDropdown .dropdown-item:nth-child(1) .mb-0", "css:finder"],
+        ["xpath=//div[@id='unregUserDropdown']/div/a/div/div[2]/p", "xpath:idRelative"],
+        ["xpath=//form/div[3]/div/div/a/div/div[2]/p", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "452b9c06-57fc-447d-805c-41541e381aa3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pt-12:nth-child(7) > .text-cyan",
+      "targets": [
+        ["css=.pt-12:nth-child(7) > .text-cyan", "css:finder"],
+        ["xpath=//div[4]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Sign up.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dac62263-dc9b-440d-904d-8e1b5bd17645",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "css=.op-login-bg",
+      "targets": [
+        ["css=.op-login-bg", "css:finder"],
+        ["xpath=//body/div[6]", "xpath:position"]
+      ],
+      "value": "637,334"
+    }, {
+      "id": "b920bf0b-7b85-4988-a24b-1aa70be8ba64",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=.op-login-bg",
+      "targets": [
+        ["css=.op-login-bg", "css:finder"],
+        ["xpath=//body/div[6]", "xpath:position"]
+      ],
+      "value": "637,334"
+    }, {
+      "id": "628615e4-26d6-4f88-8749-cbd86fd1163e",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=.op-login-bg",
+      "targets": [
+        ["css=.op-login-bg", "css:finder"],
+        ["xpath=//body/div[6]", "xpath:position"]
+      ],
+      "value": "637,334"
+    }, {
+      "id": "a75e058d-0b15-43cf-9b89-aef11873a4b6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.op-login-bg",
+      "targets": [
+        ["css=.op-login-bg", "css:finder"],
+        ["xpath=//body/div[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e1cea4f-d073-4b0d-9d18-4d4727e53bc2",
+      "comment": "",
+      "command": "type",
+      "target": "id=opSignUpEmail",
+      "targets": [
+        ["id=opSignUpEmail", "id"],
+        ["name=RegisterRequestEmail", "name"],
+        ["css=#opSignUpEmail", "css:finder"],
+        ["xpath=//input[@id='opSignUpEmail']", "xpath:attributes"],
+        ["xpath=//div[3]/div/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "validtest@gmail.com"
+    }, {
+      "id": "5646a757-a6a1-430c-b85f-3f2d624adbdd",
+      "comment": "",
+      "command": "type",
+      "target": "id=opSignUpPassword",
+      "targets": [
+        ["id=opSignUpPassword", "id"],
+        ["name=RegisterRequestPassword", "name"],
+        ["css=#opSignUpPassword", "css:finder"],
+        ["xpath=//input[@id='opSignUpPassword']", "xpath:attributes"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "//////"
+    }]
+  }, {
+    "id": "9f74e31d-3b95-4c30-ace8-c21075a41954",
+    "name": "RF: Verify whether the leading and trailing spaces entered into the Register Account fields are trimmed",
+    "commands": []
+  }, {
+    "id": "59f7c4cf-0e20-44e3-8d70-34f28cb656b6",
+    "name": "RF: Verify the Password text entered into the 'Password' and 'Password Confirm' field of 'Register Account' functionality is toggled to hide its visibility",
+    "commands": []
+  }, {
+    "id": "b38c9975-7f46-4aa5-bada-d6ce2af95782",
+    "name": "RF: Verify navigating to other pages using the options or links provided on the 'Register Account' page ",
+    "commands": []
+  }, {
+    "id": "1bf43817-174b-40e5-8c52-0898bd085a81",
+    "name": "RF: Verify the UI of the 'Register Account' page",
+    "commands": []
+  }, {
+    "id": "20becd25-b963-4bc7-9e1d-af46cc99be27",
+    "name": "RF: Verify 'Please verify your email address. *Click here to verify.*' message is present after registration",
+    "commands": []
+  }, {
+    "id": "f3525d97-2021-4ff3-84b4-c51e54f7f815",
+    "name": "RF: Verify 'Register Account' functionality in all the supported environments",
+    "commands": []
+  }, {
+    "id": "7ccf5d78-1b75-4e18-b9bf-e01860a409fc",
+    "name": "SIF: Verify logging into the Application using valid credentials",
+    "commands": []
+  }, {
+    "id": "a806a0b9-d1f1-47b5-8f27-a9b6b0b00271",
+    "name": "SIF: Verify logging into the Application using invalid credentials (i.e. Invalid email address and Invalid Password)",
+    "commands": []
+  }, {
+    "id": "b8be257c-ed64-4636-908d-238247d94aff",
+    "name": "SIF: Verify logging into the Application using invalid email address and valid Password)",
+    "commands": []
+  }, {
+    "id": "d3eb27a0-2765-42a1-8151-8619c99bab40",
+    "name": "SIF: Verify logging into the Application using valid email address and invalid Password)",
+    "commands": []
+  }, {
+    "id": "5ecc46cf-70a9-4d46-ad40-cacb0f859d55",
+    "name": "SIF: Verify logging into the Application without providing any credentials",
+    "commands": []
+  }, {
+    "id": "8f59df27-2055-44f7-bc5c-212af72abbd1",
+    "name": "SIF: Verify 'Forgotten Password' link is available in the Sign in page and is working",
+    "commands": []
+  }, {
+    "id": "af1169c2-ea92-4c18-a9a1-f67fe43c73c3",
+    "name": "SIF: Verify logging into the Application using Keyboard keys (Tab and Enter)",
+    "commands": [{
+      "id": "4d755f2e-72f4-4d04-bc45-048b667d8b32",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cf8cb97c-efb4-4f0a-a115-988a4a2808c0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1055",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a1c57187-c3aa-4e7b-bc63-48dc07b7212d",
+      "comment": "",
+      "command": "click",
+      "target": "css=#unregUserDropdown > span",
+      "targets": [
+        ["css=#unregUserDropdown > span", "css:finder"],
+        ["xpath=//div[@id='unregUserDropdown']/span", "xpath:idRelative"],
+        ["xpath=//form/div[3]/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f5295250-60b8-4281-ab9c-9fd437eff46c",
+      "comment": "",
+      "command": "click",
+      "target": "css=#unregUserDropdown .dropdown-item:nth-child(1) .mt-0",
+      "targets": [
+        ["css=#unregUserDropdown .dropdown-item:nth-child(1) .mt-0", "css:finder"],
+        ["xpath=//div[@id='unregUserDropdown']/div/a/div/div[2]/h5", "xpath:idRelative"],
+        ["xpath=//form/div[3]/div/div/a/div/div[2]/h5", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "50ce3506-d6ac-4612-bd85-2cb6dff7c1df",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "id=opLoginEmail",
+      "targets": [
+        ["id=opLoginEmail", "id"],
+        ["css=#opLoginEmail", "css:finder"],
+        ["xpath=//input[@id='opLoginEmail']", "xpath:attributes"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b22da830-b310-46b9-a968-d201124013f2",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "id=opLoginPassword",
+      "targets": [
+        ["id=opLoginPassword", "id"],
+        ["css=#opLoginPassword", "css:finder"],
+        ["xpath=//input[@id='opLoginPassword']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bbcc308d-dc68-4e87-8c71-815117d43d86",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=div:nth-child(3) > .invg-gradient-blue",
+      "targets": [
+        ["css=div:nth-child(3) > .invg-gradient-blue", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "538b9b1a-dfb3-483b-a903-2bfe521acfaf",
+    "name": "SIF: Verify Email Address and Password text fields in the Sign in page have the place holder text ",
+    "commands": []
+  }, {
+    "id": "6b7ec3fe-e31d-4c42-baa6-33969190a217",
+    "name": "SIF: Verify Logging into the Application and browsing back using Browser back button ",
+    "commands": []
+  }, {
+    "id": "a08544a3-e295-46b3-b725-00ca6c3698b2",
+    "name": "SIF: Verify Loggingout from the Application and browsing back using Browser back button",
+    "commands": []
+  }, {
+    "id": "66bae9fc-c700-4f44-bf8b-f5a059175bcd",
+    "name": "SIF: Verify the number of unsuccessful login attempts ",
+    "commands": []
+  }, {
+    "id": "8f9acd83-b1b1-4fd0-a5a0-75e7197099c6",
+    "name": "SIF: Verify the text into the Password field is toggled to hide its visibility",
+    "commands": []
+  }, {
+    "id": "f9522c68-98f0-4742-ac89-5b85676b8a9b",
+    "name": "SIF: Verify the copying of the text entered into the Password field",
+    "commands": []
+  }, {
+    "id": "8b8edb71-75db-40cb-98ed-114afe10dedb",
+    "name": "SIF: Verify the Password is not visible in the Page Source",
+    "commands": []
+  }, {
+    "id": "3d573820-abbb-411f-b523-b7ceaccc5648",
+    "name": "SIF: Verify Logging into the Application after changing the password",
+    "commands": []
+  }, {
+    "id": "29e049c9-d4df-4757-9d40-3dd95596ca92",
+    "name": "SIF: Verify Logging into the Application, closing the Browser without loggingout and opening the application in the Browser again",
+    "commands": []
+  }, {
+    "id": "6289f9a6-7f87-46c6-b329-601437ee86d6",
+    "name": "SIF: Verify user is able to navigate to different pages from Sign in page",
+    "commands": []
+  }, {
+    "id": "9a77228c-b85f-40b5-acd7-7511c39b2f7f",
+    "name": "SIF: Verify the different ways of navigating to the Sign in page",
+    "commands": []
+  }, {
+    "id": "e4659782-8e1b-4dd5-b096-1ae9c5f416a4",
+    "name": "SIF: Verify the UI of the Sign in page",
+    "commands": []
+  }, {
+    "id": "8b5a3efc-0af5-45b9-bbaf-cc5d403ac66c",
+    "name": "SIF: Verify 'Sign In' functionality in all the supported environments",
+    "commands": []
+  }, {
+    "id": "85104d02-f184-4473-8db1-52a177e9aa37",
+    "name": "LOF: Verify Logging out by selecting 'Log out' option from 'User menu' dropdown",
+    "commands": []
+  }, {
+    "id": "792f81f3-28ac-497f-b00f-0fae30ec4050",
+    "name": "LOF: Verify the Application session status, after logging and closing the Browser without logging out",
+    "commands": []
+  }, {
+    "id": "bae4dfe1-b087-446e-8075-2cfe60dafa84",
+    "name": "LOF: Verify logging out and browsing back",
+    "commands": []
+  }, {
+    "id": "808ae084-a5e0-4815-9ac3-9728f323e71a",
+    "name": "LOF: Verify 'Log out' option is not displayed in header before logging in",
+    "commands": []
+  }, {
+    "id": "ba8de971-a292-43b0-9fc3-cd20a3b601d1",
+    "name": "LOF: Verify the 'Log out' functionality in all the supported environments",
+    "commands": []
+  }, {
+    "id": "d4e0b315-4251-4c2e-955e-f3d1426c4f61",
+    "name": "DLMF: Verify the UI of the Landing page using the Dark/Light Mode",
+    "commands": [{
+      "id": "5e527ca8-7cfe-492d-8cac-d000ab08a97a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9c7d098f-fc56-4b4d-98fb-ad136d294725",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1055",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5a4c61a4-0a6f-45ff-a9ed-6221d8faaabb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-12:nth-child(1) > .info-card",
+      "targets": [
+        ["css=.col-12:nth-child(1) > .info-card", "css:finder"],
+        ["xpath=//div[@id='fullSizeWithFooterContentPanel']/div/section/div[3]/div/section[7]/div/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//section[7]/div/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "75d6a92f-5b25-4376-8de8-6ebca2101c68",
+      "comment": "",
+      "command": "assertSelectedValue",
+      "target": "css=.col-12:nth-child(1) > .info-card > div",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "048d0d1c-4867-489b-9527-91bfcf03ad67",
+    "name": "DLMF: Verify 'Dark/Light Mode' functionality and UI in all pages",
+    "commands": []
+  }, {
+    "id": "dfdca69e-50b4-4417-8231-979056a0ffb1",
+    "name": "DLMF: Verify 'Dark/Light Mode' functionality in all the supported environments",
+    "commands": []
+  }, {
+    "id": "b75071c7-0911-4197-98c0-182bb17863b0",
+    "name": "SF: Verify 'Search people' and 'Search all results for' functionality when not logged in to the application",
+    "commands": []
+  }, {
+    "id": "af5db517-6247-4fcc-a74d-add56988cceb",
+    "name": "SF: Verify searching with an existing Stock Name",
+    "commands": []
+  }, {
+    "id": "d05ffa9d-1933-4470-b97c-52f5a9420883",
+    "name": "SF: Verify searching with a non existing Stock Name",
+    "commands": []
+  }, {
+    "id": "ba429ade-00cf-472b-a9aa-bb886ef25aa5",
+    "name": "SF: Verify searching without providing any Stock Name",
+    "commands": []
+  }, {
+    "id": "fca63278-0263-48a9-894b-c1232fa96c79",
+    "name": "SF: Verify placeholder for search bar",
+    "commands": []
+  }, {
+    "id": "4ae16d14-ff85-483d-b9a6-38aaf547d216",
+    "name": "SF: Verify 'Search people' and 'Search all results for' functionality when logged in to the application",
+    "commands": []
+  }, {
+    "id": "f8b56a3d-ec96-41ef-8238-16154af15ffc",
+    "name": "SF: Verify Search using the text from the product description",
+    "commands": []
+  }, {
+    "id": "460caf93-881e-4ed1-9e58-72343e1ac22f",
+    "name": "SF: Verify the UI of 'Search' functionality",
+    "commands": []
+  }, {
+    "id": "914e4628-9767-4239-b788-bd39d90fb65b",
+    "name": "SF: Verify 'Search' functionality in all the supported environments",
+    "commands": []
+  }, {
+    "id": "5de3c6aa-8f7c-4e61-9d54-0b74476cdb9d",
+    "name": "NF: Verify 'Notification' icon in the navigation bar is present when not logged in",
+    "commands": []
+  }, {
+    "id": "4c5157a4-e6db-4155-bd13-7748b10be9ef",
+    "name": "NF: Verify 'Notification' icon in the navigation bar is present when logged in",
+    "commands": []
+  }, {
+    "id": "f228a729-2f9f-42ca-8313-ad80999f59b1",
+    "name": "NF: Verify toggle functionality for \"more\" option on notifications",
+    "commands": []
+  }, {
+    "id": "982ada5b-67c4-4aa8-b4ae-c35f4eeef0f1",
+    "name": "NF: Verify \"Mark as all read\" functionality",
+    "commands": []
+  }, {
+    "id": "ee32d033-d766-474b-b5da-379366aecaa5",
+    "name": "NF: Verify \"Notification settings\" link",
+    "commands": []
+  }, {
+    "id": "ffbae22a-333a-4c3a-8b60-6248d48bccb6",
+    "name": "NF: Verify the UI of Notification functionality",
+    "commands": []
+  }, {
+    "id": "d71adbae-9906-4320-b6e2-82f6c952f507",
+    "name": "NF: Verify 'Notification' functionality in all the supported environments",
+    "commands": []
+  }, {
+    "id": "6f863a39-9ed1-478f-a974-9efdc327d17a",
+    "name": "SHF: Verify the different ways of navigating to the 'InvestaWallet' page",
+    "commands": []
+  }, {
+    "id": "612cbf2f-54cc-442f-8675-f6c497614c7d",
+    "name": "SHF: Verify button links under 'SUBSCRIPTIONS' shop item",
+    "commands": []
+  }, {
+    "id": "7245d285-27f3-4234-a90c-551b861a53dc",
+    "name": "SHF: Verify button links under 'EVENTS' shop item",
+    "commands": []
+  }, {
+    "id": "a1478b7e-15a8-495e-a89d-f2a9579f6f17",
+    "name": "SHF: Verify button links under 'COMPETITIONS' shop item",
+    "commands": []
+  }, {
+    "id": "57591b7e-5cd6-4b88-8b0c-200eeed2ea2c",
+    "name": "SHF: Verify button links under 'TRADING CUP DEFENSE' shop item",
+    "commands": []
+  }, {
+    "id": "f54ac9f0-1d5b-4118-bfd3-10b42dd35d89",
+    "name": "SHF: Verify button links under 'DONATIONS' shop item",
+    "commands": []
+  }, {
+    "id": "9ca86dcb-36c7-4fbc-968a-82f0306204a3",
+    "name": "SHF: Verify the UI of the Shop page",
+    "commands": []
+  }, {
+    "id": "f37aa2e5-4c07-41e8-b820-f958a0b0f823",
+    "name": "SHF: Verify 'Shop' functionality in all the supported environments",
+    "commands": []
+  }, {
+    "id": "e2814601-7143-4c70-bfb6-ffd469f45769",
+    "name": "IWF: Verify the different ways of navigating to the 'InvestaWallet' page",
+    "commands": []
+  }, {
+    "id": "ac71844d-a448-41a4-a268-ad8a96a90dcf",
+    "name": "IWF: Verify navigating to other pages using the options or links provided on the 'Wallet' page ",
+    "commands": []
+  }, {
+    "id": "eef85dcc-323d-4524-bdef-26576d36568b",
+    "name": "IWF: Verify change of wallet total after topping up the wallet",
+    "commands": []
+  }, {
+    "id": "0d22ab16-ce97-458b-b131-bb1b246a4c25",
+    "name": "IWF: Verify update on 'Transaction list' after a transaction",
+    "commands": []
+  }, {
+    "id": "50c39346-5745-4c7e-9329-ea5e37f40ea0",
+    "name": "IWF: Verify the UI of the 'InvestaWallet' page",
+    "commands": []
+  }, {
+    "id": "12671fc8-5e64-49a2-b377-be7a25ba3d99",
+    "name": "IWF: Verify 'InvestaWallet' functionality in all the supported environments",
+    "commands": []
+  }, {
+    "id": "19d45650-ada1-4bdb-b535-9f09000171da",
+    "name": "TUF: Verify the different ways of navigating to the 'Top-Up' page",
+    "commands": []
+  }, {
+    "id": "e00c2e42-ebf4-49ab-a95a-bcd1a760e6a0",
+    "name": "TUF: Verify each bank information text after user choose a payment option on the 'Top Up' Method process",
+    "commands": []
+  }, {
+    "id": "354a4d4e-5a0b-4a50-9f1f-943f2e9abf33",
+    "name": "TUF: Verify breadcrumbs using the options or button links on each process (Method > Amount > payment)",
+    "commands": []
+  }, {
+    "id": "7020c27d-9772-4955-ba16-6f76d6cc2e18",
+    "name": "TUF: Verify invalid amount for 'Amount' input field",
+    "commands": [{
+      "id": "b98e02a6-dfe6-4184-9d5e-e641407b1cc6",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b02a3fee-abcf-45b0-8b4f-5ef2d4fc1481",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1055",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fb849d41-012d-4296-ad24-a17b535ff7da",
+      "comment": "",
+      "command": "click",
+      "target": "id=unregUserDropdown",
+      "targets": [
+        ["id=unregUserDropdown", "id"],
+        ["css=#unregUserDropdown", "css:finder"],
+        ["xpath=//div[@id='unregUserDropdown']", "xpath:attributes"],
+        ["xpath=//div[@id='investaNavbar']/form/div[3]/div", "xpath:idRelative"],
+        ["xpath=//form/div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "12f9a77c-4e09-4da8-b663-6d374e57d9d9",
+      "comment": "",
+      "command": "click",
+      "target": "css=#unregUserDropdown .dropdown-item:nth-child(1) .mb-0",
+      "targets": [
+        ["css=#unregUserDropdown .dropdown-item:nth-child(1) .mb-0", "css:finder"],
+        ["xpath=//div[@id='unregUserDropdown']/div/a/div/div[2]/p", "xpath:idRelative"],
+        ["xpath=//form/div[3]/div/div/a/div/div[2]/p", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "16648724-6284-4c83-b814-97ca62c365aa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.op-login-card",
+      "targets": [
+        ["css=.op-login-card", "css:finder"],
+        ["xpath=//body/div[6]/div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e1925a27-5978-4756-94fa-154410d904d2",
+      "comment": "",
+      "command": "type",
+      "target": "id=opLoginEmail",
+      "targets": [
+        ["id=opLoginEmail", "id"],
+        ["css=#opLoginEmail", "css:finder"],
+        ["xpath=//input[@id='opLoginEmail']", "xpath:attributes"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": "validtest@gmail.com"
+    }, {
+      "id": "a59200a1-e8a5-4e3f-bd6d-eadf9c227acd",
+      "comment": "",
+      "command": "click",
+      "target": "id=opLoginPassword",
+      "targets": [
+        ["id=opLoginPassword", "id"],
+        ["css=#opLoginPassword", "css:finder"],
+        ["xpath=//input[@id='opLoginPassword']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "acaa19ae-9108-4e71-9f71-38746cb61535",
+      "comment": "",
+      "command": "click",
+      "target": "id=opLoginPassword",
+      "targets": [
+        ["id=opLoginPassword", "id"],
+        ["css=#opLoginPassword", "css:finder"],
+        ["xpath=//input[@id='opLoginPassword']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "964bd3ea-6228-401e-b364-fd17a77ff2e1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.op-login-bg",
+      "targets": [
+        ["css=.op-login-bg", "css:finder"],
+        ["xpath=//body/div[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7af69c14-57e2-4cbc-beb0-d2a0bf0bd99a",
+      "comment": "",
+      "command": "type",
+      "target": "id=opLoginPassword",
+      "targets": [
+        ["id=opLoginPassword", "id"],
+        ["css=#opLoginPassword", "css:finder"],
+        ["xpath=//input[@id='opLoginPassword']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "0ba77522-0225-4051-a218-a5dafd73e42d",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=opLoginPassword",
+      "targets": [
+        ["id=opLoginPassword", "id"],
+        ["css=#opLoginPassword", "css:finder"],
+        ["xpath=//input[@id='opLoginPassword']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "c2638024-f64a-47f2-8137-4480d3d40c0e",
+      "comment": "",
+      "command": "click",
+      "target": "css=a > .op-icons",
+      "targets": [
+        ["css=a > .op-icons", "css:finder"],
+        ["xpath=//div[@id='investaNavbar']/form/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//form/div[2]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9e011fe-4eac-4e00-b40b-20c44f25c8b7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.my-topup img",
+      "targets": [
+        ["css=.my-topup img", "css:finder"],
+        ["xpath=//div[@id='fullSizeWithFooterContentPanel']/div/section/div/div[2]/ul/li[2]/a/img", "xpath:idRelative"],
+        ["xpath=//li[2]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "68298b83-3bf2-4c48-9a33-e691f8279ea3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card-body > .row > .col-md-4:nth-child(1) .rounded",
+      "targets": [
+        ["css=.card-body > .row > .col-md-4:nth-child(1) .rounded", "css:finder"],
+        ["xpath=//div[@id='fullSizeWithFooterContentPanel']/div/section[2]/div/div/div/div[2]/div/div/div/button/img", "xpath:idRelative"],
+        ["xpath=//button/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "45d7ac90-5b5f-41df-948b-b5f3d5a9d751",
+      "comment": "",
+      "command": "click",
+      "target": "css=.input-group-lg > .form-control",
+      "targets": [
+        ["css=.input-group-lg > .form-control", "css:finder"],
+        ["xpath=(//input[@type='number'])[12]", "xpath:attributes"],
+        ["xpath=//div[@id='fullSizeWithFooterContentPanel']/div/section[2]/div/div/div/div[3]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ceb1becc-2c9b-4b9c-8516-bdc125bf5705",
+      "comment": "",
+      "command": "click",
+      "target": "css=.input-group-lg > .form-control",
+      "targets": [
+        ["css=.input-group-lg > .form-control", "css:finder"],
+        ["xpath=(//input[@type='number'])[12]", "xpath:attributes"],
+        ["xpath=//div[@id='fullSizeWithFooterContentPanel']/div/section[2]/div/div/div/div[3]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2df325b5-c35f-4603-a341-27c633dc40c7",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=.input-group-lg > .form-control",
+      "targets": [
+        ["css=.input-group-lg > .form-control", "css:finder"],
+        ["xpath=(//input[@type='number'])[12]", "xpath:attributes"],
+        ["xpath=//div[@id='fullSizeWithFooterContentPanel']/div/section[2]/div/div/div/div[3]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f1e2e32-59e1-459a-9b69-4e411856e4cf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.input-group-lg > .form-control",
+      "targets": [
+        ["css=.input-group-lg > .form-control", "css:finder"],
+        ["xpath=(//input[@type='number'])[12]", "xpath:attributes"],
+        ["xpath=//div[@id='fullSizeWithFooterContentPanel']/div/section[2]/div/div/div/div[3]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "60cce84e-a1ab-4c38-9f68-0575278a7006",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pr-4",
+      "targets": [
+        ["css=.pr-4", "css:finder"],
+        ["xpath=//div[@id='fullSizeWithFooterContentPanel']/div/section[2]/div/div/div/div[3]/div/div", "xpath:idRelative"],
+        ["xpath=//section[2]/div/div/div/div[3]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "94ff8efd-1fa5-4748-b656-f5e43db9ad24",
+      "comment": "",
+      "command": "assertValue",
+      "target": "css=.ng-invalid-number",
+      "targets": [
+        ["css=.ng-invalid-number", "css:finder"],
+        ["xpath=(//input[@type='number'])[12]", "xpath:attributes"],
+        ["xpath=//div[@id='fullSizeWithFooterContentPanel']/div/section[2]/div/div/div/div[3]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "e"
+    }]
+  }, {
+    "id": "04925585-bad7-4912-b173-0a6e258b8f63",
+    "name": "TUF: Verify proper notification messages are display on the 'Amount' input field",
+    "commands": []
+  }, {
+    "id": "492c9c44-48ef-47a8-8099-91c2dfa85882",
+    "name": "TUF: Verify 'Payment' information for user",
+    "commands": []
+  }, {
+    "id": "67ba1690-14aa-4e57-b5c1-e401c8df2a61",
+    "name": "TUF: Verify UI of the 'Top Up' page",
+    "commands": []
+  }, {
+    "id": "f8d87987-bffe-428e-8404-69795703dc2c",
+    "name": "TUF: Verify 'Top-Up' functionality in all the supported environments",
+    "commands": []
+  }, {
+    "id": "1908cf99-9e66-4bc2-9b33-e0554be5ca20",
+    "name": "REF: Verify the different ways of navigating to the 'Referrals page",
+    "commands": []
+  }, {
+    "id": "a79111a6-fae6-47e2-b7ad-a83a9dbbc43e",
+    "name": "REF: Verify referral link by user using different account",
+    "commands": []
+  }, {
+    "id": "8d63836a-d035-4127-9b67-0391257e5d24",
+    "name": "REF: Verify 'View Referrals' button in the 'Referrals' page",
+    "commands": []
+  }, {
+    "id": "e6e4fa02-54f0-4124-86d6-c861db5df782",
+    "name": "REF: Verify progress bar when referral link is used",
+    "commands": []
+  }, {
+    "id": "4fc98d0e-b7e7-4757-bd1c-207fa213d11c",
+    "name": "REF: Verify countdown on the '*5* more to go' button for the progress bar",
+    "commands": []
+  }, {
+    "id": "610f5c66-92c0-4b9a-8cab-530260993590",
+    "name": "REF: Verify update on 'My Referrals' table upon using the referral link",
+    "commands": []
+  }, {
+    "id": "30368a7c-4827-436e-ad4f-f4a509ad0bc4",
+    "name": "REF: Verify the UI of 'Referral' page functionality",
+    "commands": []
+  }, {
+    "id": "1b5711e8-d6e3-4f59-8b3c-94c74737748f",
+    "name": "REF: Verify the 'Referral' page functionality in all the supported environments",
+    "commands": []
+  }],
+  "suites": [{
+    "id": "5cedfdf6-3b0c-4262-b93e-da2a52d7bb3c",
+    "name": "Registration",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a79fb7af-1c7e-4dce-b605-57ebc90f95ce", "20becd25-b963-4bc7-9e1d-af46cc99be27", "1bf43817-174b-40e5-8c52-0898bd085a81", "f3525d97-2021-4ff3-84b4-c51e54f7f815", "b8e8e648-3d1e-4860-871c-7e1e6cbf4bad", "1fd90cbb-582d-42a0-a336-2968957f2607", "cfe102d5-ec1a-4576-8b1f-77304d6b7f9f", "a6377297-b3e9-4e7e-a3b6-b8a82c6d44bc", "d81f1cfc-f465-4021-a296-d9ea643ab9bb", "835029f1-c964-42aa-9655-e6d0b166d150", "5d98e711-5520-4310-823a-c2a55f4a105c", "b38c9975-7f46-4aa5-bada-d6ce2af95782", "b8bb110f-4f3e-4264-9c44-b60d87cd42ed", "59f7c4cf-0e20-44e3-8d70-34f28cb656b6", "0abe0a8e-bac5-42b8-a079-811485ca322e", "02aff823-f35c-495b-9ac0-6f2a9b5b03fc", "1bd06dc3-34ed-47d9-9b2b-c2579d9669f6", "9f74e31d-3b95-4c30-ace8-c21075a41954"]
+  }, {
+    "id": "0a3da995-ee6f-41e5-8bd4-fa32596a14bb",
+    "name": "Sign in",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["7ccf5d78-1b75-4e18-b9bf-e01860a409fc", "8f59df27-2055-44f7-bc5c-212af72abbd1", "8b5a3efc-0af5-45b9-bbaf-cc5d403ac66c", "538b9b1a-dfb3-483b-a903-2bfe521acfaf", "3d573820-abbb-411f-b523-b7ceaccc5648", "6b7ec3fe-e31d-4c42-baa6-33969190a217", "29e049c9-d4df-4757-9d40-3dd95596ca92", "a08544a3-e295-46b3-b725-00ca6c3698b2", "b8be257c-ed64-4636-908d-238247d94aff", "a806a0b9-d1f1-47b5-8f27-a9b6b0b00271", "af1169c2-ea92-4c18-a9a1-f67fe43c73c3", "d3eb27a0-2765-42a1-8151-8619c99bab40", "5ecc46cf-70a9-4d46-ad40-cacb0f859d55", "8b8edb71-75db-40cb-98ed-114afe10dedb", "e4659782-8e1b-4dd5-b096-1ae9c5f416a4", "f9522c68-98f0-4742-ac89-5b85676b8a9b", "9a77228c-b85f-40b5-acd7-7511c39b2f7f", "66bae9fc-c700-4f44-bf8b-f5a059175bcd", "8f9acd83-b1b1-4fd0-a5a0-75e7197099c6", "6289f9a6-7f87-46c6-b329-601437ee86d6"]
+  }, {
+    "id": "4c05f687-6819-4356-94ad-bcbc2f8791f6",
+    "name": "Log out",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }, {
+    "id": "ef1f492e-0dbf-4961-b25c-b4a1be7379dd",
+    "name": "Dark/Light Mode",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }, {
+    "id": "dac5e595-80be-4249-917a-2066f1387a22",
+    "name": "Search",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }, {
+    "id": "71066225-1a6c-4625-ac44-e3f8cb9c1093",
+    "name": "Notification",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }, {
+    "id": "055a21b1-e156-44c3-a162-ccc06dad3c15",
+    "name": "Shop",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }, {
+    "id": "76eb5d04-8b90-4258-99a1-05b429861a4e",
+    "name": "InvestaWallet",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }, {
+    "id": "e2f6765e-8bdd-47a3-a036-01676bbf12df",
+    "name": "Top-Up",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }, {
+    "id": "f69b65bb-4c66-49f4-8fdf-b44ce849aab3",
+    "name": "Referrals",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.investagrams.com/"],
+  "plugins": []
+}
